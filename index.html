@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walmart</title>
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/id/R.966f1e284195f2021b9ee7ba0a3f0d5c?rik=G7XjHh5fL7g7Yg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fKTn%2foqK%2fKTnoqKqGc.jpeg&ehk=VZ%2finEk7ucPAKTdCNpo3L8RvIVPqGSd%2feKJPmqUxzgQ%3d&risl=&pid=ImgRaw&r=0"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/841ba55fdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="nav-bar d-sm-flex justify-content-sm-evenly align-items-center pt-sm-2 pb-sm-2"
+      >
+        <div class="menu fs-4">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="walmart-icon">
+          <img
+            src="Images/icons8-walmart.svg"
+            alt="Walmart-Logo"
+            class="m-sm-2"
+          />
+        </div>
+        <div
+          class="item-link d-sm-flex align-items-center gap-sm-1 ps-sm-3 pe-sm-3 pt-sm-2 pb-sm-2"
+        >
+          <div class="img-border">
+            <img
+              loading="lazy"
+              alt=" "
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png"
+              width="32"
+              height="32"
+              class="br-100 v-btm"
+              style="margin-right: 12px"
+            />
+          </div>
+          <div class="item-text">
+            <p class="fw-bold">How do you want your items?</p>
+            <p>Sacramento, 95829 &bull;Sacramento Su...</p>
+          </div>
+          <span class="fs-5" style="color: white"> > </span>
+        </div>
+        <div
+          class="input-container d-flex align-items-center pt-sm-2 pb-sm-2 ps-sm-4 pe-sm-3"
+        >
+          <input
+            type="search"
+            placeholder="Search everything at Walmart online and in store"
+            class="fs-5"
+          />
+          <div class="icon-container p-sm-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div
+          class="reorder d-sm-flex align-items-center gap-sm-2 ps-sm-3 pe-sm-3"
+        >
+          <i class="fa-regular fa-heart"></i>
+          <div class="reorder-text">
+            <p class="fs-6 fw-medium">Reorder</p>
+            <p class="fw-bold fs-5">My Items</p>
+          </div>
+        </div>
+        <div class="reorder d-flex align-items-center gap-2 ps-3 pe-3">
+          <i class="fa-regular fa-user"></i>
+          <div class="reorder-text">
+            <p class="fs-6 fw-medium">Sign In</p>
+            <p class="fw-bold fs-5">Account</p>
+          </div>
+        </div>
+        <div
+          class="cart d-sm-flex flex-sm-column align-items-center pt-sm-3 ps-sm-2 pe-sm-2"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="fs-5">$0.00</p>
+        </div>
+      </nav>
+      <nav class="hidden-nav">
+        <div class="hidden-container d-flex pt-1 ps-3">
+          <div class="img-border">
+            <img
+              loading="lazy"
+              alt=" "
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png"
+              width="32"
+              height="32"
+              class="br-100 v-btm"
+              style="margin-right: 12px"
+            />
+          </div>
+          <div class="hidden-text d-flex align-items-center">
+            <p class="fw-bold">
+              How do you want your items?
+              <span class="fs-5" style="color: white"> > </span> |
+              <i class="fa-solid fa-location-dot"></i> Sacramento, 95829
+              <i class="fa-regular fa-building"></i> Sacramento Supercenter
+            </p>
+          </div>
+        </div>
+      </nav>
+      <nav class="access-link d-sm-flex align-items-center gap-sm-2">
+        <div class="department d-flex align-items-center gap-3 ms-sm-5">
+          <img src="./Images/visualization.png" alt="grid" width="16px" />
+          <p class="text-center pt-3 fw-bold" style="color: #002d58">
+            Departments
+          </p>
+          <span class="fs-5" style="color: #002d58"> > </span>
+        </div>
+        <div class="department d-flex align-items-center gap-3">
+          <img src="./Images/visualization.png" alt="grid" width="16px" />
+          <p class="text-center pt-3 fw-bold" style="color: #002d58">
+            Services
+          </p>
+          <span class="fs-5" style="color: #002d58"> > </span>
+        </div>
+        <div class="hide-link ms-3">
+          <ul
+            class="d-flex justify-content-center align-items-center gap-sm-4 list-unstyled pt-3"
+          >
+            <i>|</i>
+            <li><a href="#">Summer Savings</a></li>
+            <li><a href="#">Grocey & Essentials</a></li>
+            <li><a href="#">Back to School</a></li>
+            <li><a href="#">College Essentials</a></li>
+            <li><a href="#">Summer Games</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Electronic</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Auto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="d-flex justify-content-evenly mt-sm-4">
+      <div class="left-cont d-flex flex-column gap-md-4 pe-md-3 ps-md-3">
+        <div class="imgtext-cont ms-sm-4" style="width: 90%">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2LG4XEkZSIYEGYABSyisb1UULNLKLVT96A&s"
+            alt="picture-1"
+            width="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-5 fw-bold">Win at your own Summer</p>
+            <p class="fs-5 fw-bold">Games</p>
+            <p class="under-line mt-sm-3">Shop sports</p>
+          </div>
+        </div>
+        <div class="imgtext-cont left-mid ms-sm-4" style="width: 90%">
+          <img
+            src="https://images.unsplash.com/photo-1662468800186-67421f7d3b81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNjaG9vbGJhZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="picture-2"
+            width="100%"
+            height="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-2 fw-semibold">First-day fashion</p>
+            <p class="fs-2 fw-semibold">from $4</p>
+            <p class="under-line mt-sm-3">Shop now</p>
+          </div>
+        </div>
+        <div class="imgtext-cont ms-sm-4" style="width: 90%">
+          <img
+            src="https://images.unsplash.com/photo-1648587456176-4969b0124b12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGJveHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="picture-3"
+            width="100%"
+            height="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-3 fw-semibold">Fave subject?</p>
+            <p class="fs-3 fw-semibold">Lunch!</p>
+            <p class="under-line mt-sm-3">Shop lunch boxes</p>
+          </div>
+        </div>
+      </div>
+      <div class="middle-cont d-flex flex-column gap-md-4">
+        <div class="imgtext-cont" style="width: 96%; height: 45%">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1663100723653-927f881c0504?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2Nob29sJTIwbG9ja2VyfGVufDB8fDB8fHww"
+            alt="picture-4"
+            width="100%"
+            height="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-4">Before the bell rings</p>
+            <p class="rule-school fw-normal ms-md-1">Rule school</p>
+            <button class="mt-sm-3">Shop now</button>
+          </div>
+        </div>
+        <div class="imgtext-cont mid-cont d-flex gap-md-4" style="width: 96%">
+          <div class="left-pic" style="width: 50%; height: 100%">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682125724182-1eadf9d1360d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHZ8ZW58MHx8MHx8fDA%3D"
+              alt="picture-5.1"
+              width="100%"
+              height="100%"
+            />
+            <div class="text-space p-4">
+              <p class="fs-4 fw-semibold">Gold Medal Tech</p>
+              <p class="under-line mt-sm-3">Shop now</p>
+            </div>
+          </div>
+          <div class="right-pic" style="width: 50%; height: 100%">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHBob25lfGVufDB8fDB8fHww"
+              alt="picture-5.2"
+              width="100%"
+              height="100%"
+            />
+            <div class="text-space p-4">
+              <p class="fs-4 fw-semibold">Up to 65%</p>
+              <p class="under-line mt-sm-3">Shop now</p>
+            </div>
+          </div>
+        </div>
+        <div class="imgtext-cont last-cont" style="width: 96%">
+          <img
+            src="./Images/walmart+.jpg"
+            alt="picture-6"
+            width="100%"
+            height="100%"
+            class="midbottom-img"
+          />
+          <div class="text-space pt-1 ps-4">
+            <p class="fs-3 fw-medium">Walmart+ members save big with free</p>
+            <p class="fs-3 fw-medium">delivery from stores</p>
+            <p>Terms apply.</p>
+            <p class="under-line mt-sm-2">Join Walmart+</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-cont d-flex flex-column gap-md-4 pe-md-3">
+        <div class="imgtext-cont" style="width: 90%">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1672883551967-ab11316526b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNob3BwaW5nfGVufDB8fDB8fHww"
+            alt="picture-7"
+            width="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-3 fw-bold">Insta-Worthy</p>
+            <p class="fs-3 fw-bold">decor</p>
+            <p class="under-line mt-sm-3">Shop now</p>
+          </div>
+        </div>
+        <div class="imgtext-cont" style="width: 90%">
+          <img
+            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww"
+            alt="picture-8"
+            width="100%"
+            height="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-4 fw-semibold">Top-of-the-class gadgets</p>
+            <p class="under-line mt-sm-3">Shop tech</p>
+          </div>
+        </div>
+        <div class="imgtext-cont" style="width: 90%; height: 43%">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1679121504997-36420a5a3e0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJlZCUyMHNhbGV8ZW58MHx8MHx8fDA%3D"
+            alt="picture-9"
+            width="100%"
+            height="100%"
+          />
+          <div class="text-space p-4">
+            <p class="fs-2 fw-semibold">All you need,</p>
+            <p class="fs-2 fw-semibold">campus-style</p>
+            <p class="under-line mt-sm-3">Shop now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="d-sm-flex justify-content-between align-items-center"
+      >
+        <div class="left-flash ms-sm-5">
+          <p class="fs-2 fw-bold">Flash Deals</p>
+          <p class="up-to">Up to 65% off</p>
+        </div>
+        <div class="right-view me-sm-5">
+          <a href="#">View all</a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="scroll-link d-sm-flex align-items-sm-start justify-content-between ps-md-5 pe-sm-5 mt-md-5"
+    >
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Ophanie-Air-Mattress-King-Built-Pump-18-Inch-Elevated-Quick-Inflation-Deflation-Inflatable-Beds-High-Durability-Blow-Up-Mattresses-Camping-Indoor-Gue_63ff53c3-3a8f-430e-8d38-7e9afdf954ce.a9ae55c983baf8496f1e5dfceb45ab60.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="mattress"
+          height="230px"
+          width="100%"
+        />
+        <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $69.99</p>
+            <p class="cross-price text-decoration-line-through">$149.99</p>
+          </div>
+          <p class="more-options">More options from $59.99</p>
+          <p class="mt-md-3 same-text">Air Mattress King with</p>
+          <p class="same-text">Built in Pump, 18 Inch...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/SEJOV-Convertible-Sofa-Bed-4-in-1-Beds-Chair-3-Seat-Futon-Sofa-Linen-Sleep-Couch-5-Adjustable-Backrest-Pillows-Living-Room-Furniture-Apartment-Living_dfd5a9e6-9115-44c1-8d8d-701f9b2ff228.214dd3a77bd5a432379bb3b59fbc259c.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="sofa"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $186.00</p>
+            <p class="cross-price text-decoration-line-through">$499.99</p>
+          </div>
+          <p class="more-options">More options from $183.99</p>
+          <p class="mt-md-3 same-text">SEJOV Convertible Sofa</p>
+          <p class="same-text">Bed 4-in-1 Sofa Beds...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/MISS-ROSE-All-In-One-Makeup-Kit-Makeup-Kit-for-Women-Full-Kit-Multipurpose-Women-s-Makeup-Sets-Beginners-and-Professionals-Alike-Easy-to-Carry_2794f783-b09c-4be3-864a-1a55f63f2cd7.9a4f5e737a923074356262e5938fa36c.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="makeup kit"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $19.90</p>
+            <p class="cross-price text-decoration-line-through">$50.00</p>
+          </div>
+          <p class="mt-md-3 same-text">MISS ROSE All In One</p>
+          <p class="same-text">Makeup Kit,Makeup Kit...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Chevrolet-Silverado-24V-Powered-Ride-Cars-Kids-Extra-large-Real-2-Seat-Toys-Remote-Control-LED-Light-MP3-Player-Electric-Vehicles-Truck-Boys-Girls-Gi_1d95616a-6c2b-4915-b17e-01ad75e6c706.ccfbb2c74a6ff7fd5904bb214244d634.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="car for kids"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $319.99</p>
+            <p class="cross-price text-decoration-line-through">$799.99</p>
+          </div>
+          <p class="mt-md-3 same-text">Chevrolet Silverado 24V</p>
+          <p class="same-text">Powered Ride on Cars fo...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="earring short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Cate-Chloe-Isabel-18k-Rose-Gold-Plated-Drop-Dangle-Earrings-CZ-Crystal-Jewelry-for-Women-Gift-for-Her_514aa1f7-190f-4bdc-b0b3-9e0cefa6aa6a.689990bd476938763280d200c4ff5091.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="earrings"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $15.99</p>
+            <p class="cross-price text-decoration-line-through">$150.00</p>
+          </div>
+          <p class="mt-md-3 same-text">Cate $ Chloe Isabel 18k</p>
+          <p class="same-text">Rose Gold Plated Drop...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="mattress-2 short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/JPHOME-King-Size-Quilted-Fitted-Mattress-Pad-Cover-100-Waterproof-Protector-Deep-Pocket-8-21-Breathable-Noiseless-Soft-Comfortable-78-x-80-Dark-Gray_f9f37c42-cb6f-4911-90c2-cf8554788b8d.e066f8e73f4a6959007ce51896934464.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="mattress2"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $28.99</p>
+            <p class="cross-price text-decoration-line-through">$36.95</p>
+          </div>
+          <p class="more-options">More options from $20.99</p>
+          <p class="mt-md-3 same-text">JPHOME King Size</p>
+          <p class="same-text">Quilled Fitted Mattress...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div>
+        <p class="next-arrow">></p>
+      </div>
+    </section>
+    <section class="short-link2">
+      <p class="fs-2 fw-semibold ps-md-5 pt-md-5">Continue your shopping</p>
+      <div class="d-sm-flex align-items-sm-start justify-content-between ps-md-5 pe-sm-5 mt-md-5">
+        <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/HP-Inc-HP-61-CH562WN-Tri-color-Original-Ink-Cartridge_318a4a4f-3c0b-46d7-a89f-e666d55c423c.615bcc2ad62db6e5638f4d90930ac438.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="ink-catridge"
+          height="230px"
+          width="100%"
+        />
+        <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $33.99</p>
+          </div>
+          <p class="more-options">More options from $23.92</p>
+          <p class="mt-md-3 same-text">HP Inc. HP 61</p>
+          <p class="same-text">(CH562WN)Tri-color...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/ABCCANOPY-7-5FT-Patio-Umbrella-with-Push-Button-Tilt-13-Colors-Brown_4a68e3e3-c45f-4765-8333-224d49da455a.1d6d07a4747c64772d9de2ae0eb4ef1d.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="umbrella"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $29.92</p>
+            <p class="cross-price text-decoration-line-through">$59.99</p>
+          </div>
+          <p class="more-options">Options from $29.92 - $64.99</p>
+          <p class="mt-md-3 same-text">ABCCANOPY 7.5FT Patio</p>
+          <p class="same-text">Umbrella with Push...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Lefree-Power-Strip-Extension-Cord-Multi-Outlet-Surge-Protector-White-2Pack_11102bf1-badf-4dfa-bb12-a3d6c7169441.7305c2aaca6232f391ae5a61d8187ab7.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="multi-outlet"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $27.99</p>
+            <p class="cross-price text-decoration-line-through">$59.99</p>
+          </div>
+          <p class="more-options">More options from $14.56</p>
+          <p class="mt-md-3 same-text">Lefree Power Strip</p>
+          <p class="same-text">Extensio Cord Multi...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Restored-Apple-iPhone-14-Pro-Max-Carrier-Unlocked-128GB-Deep-Purple-MQ8R3LL-A-Refurbished_cb8f75e5-1b8e-4c06-9776-0d995a314ada.88ab53492f6fe7e653033585616419b1.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="iPhone"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $744.95</p>
+            <p class="cross-price text-decoration-line-through">$919.00</p>
+          </div>
+          <p class="more-options">More options from $744.85</p>
+          <p class="mt-md-3 same-text">Restored Apple iPhone 14</p>
+          <p class="same-text">Pro Max - Carrier...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="earring short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Samsung-Galaxy-Tab-A9-11-128GB-Navy-Wi-Fi-SM-X210NDBEXAR_14fd00d5-2f27-4cd1-ae4b-c269ae88f138.76e1dfe2c7d5ce3ac2e7d6f35fced1f4.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+          alt="tab"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $249.00</p>
+          </div>
+          <p class="more-options">More options from $186.45</p>
+          <p class="mt-md-3 same-text">Samsung Galaxy Tab A9+</p>
+          <p class="same-text">11" Tablet,128GB,Androi...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="mattress-2 short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/SOLPOWBEN-20000mAh-Solar-Charger-Black-We-only-sell-this-product-in-one-store-If-you-need-genuine-product-please-look-for-the-SOLPOWBEN-US-store_b112c78d-fdd2-4b55-a309-19191781de78.fdbbb6768aace7585be0f895b1c65f2f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="solar"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $18.79</p>
+            <p class="cross-price text-decoration-line-through">$49.99</p>
+          </div>
+          <p class="mt-md-3 same-text">SOLPOWBEN</p>
+          <p class="same-text">20000mAh Solar...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+        <div>
+          <p class="next-arrow2">></p>
+        </div>
+      </div>
+    </section>
+    <section class="d-sm-flex justify-content-center mt-sm-5">
+      <div class="left-everyday">
+        <div class="top-head d-sm-flex justify-content-between align-items-center mt-sm-4">
+          <div class="text-everyday ms-sm-5">
+            <p class="fs-2 fw-semibold">Elevated everyday eats</p>
+            <p class="new-finds">New finds launching weekly.</p>
+          </div>
+          <a href="#" class="pe-sm-3">View all</a>
+        </div>
+        <div class="three-items d-sm-flex align-items-sm-start justify-content-around">
+          <div class="short-link">
+            <img
+              src="https://i5.walmartimages.com/seo/bettergoods-Plant-Based-Unsweetened-Original-Almondmilk-Half-Gallon_1cd6f4d6-8c29-4e29-a835-29b9f0cebedc.e1f20ff4d3105023235ae36485c9277f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt="almondmilk"
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="fs-5 fw-semibold">$2.56</p>
+                <p class="cross-price">4.0&cent; /fl oz</p>
+              </div>
+              <p class="mt-md-3 same-text">bettergoods Plant-Based</p>
+              <p class="same-text">Unsweetened Original...</p>
+              <button class="fw-semibold mt-md-2">&plus;Add</button>
+            </div>
+          </div>
+          <div class="short-link">
+            <img
+              src="https://i5.walmartimages.com/seo/bettergoods-Whole-Milk-Honey-Vanilla-Greek-Yogurt-32-oz_91f824d5-6d6c-48a4-a118-014872d38c0e.e3c281b856e9fc8127adc1eb13629403.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt="greek-yoghurt"
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="fs-5 fw-semibold">$3.97</p>
+                <p class="cross-price">12.4&cent; /oz</p>
+              </div>
+              <p class="mt-md-3 same-text">bettergoods Whole Milk</p>
+              <p class="same-text">Honey Vanilla Greek...</p>
+              <button class="fw-semibold mt-md-2">&plus;Add</button>
+            </div>
+          </div>
+          <div class="short-link corn-cont">
+            <img
+              src="https://i5.walmartimages.com/seo/bettergoods-Yellow-Corn-Cassava-Flour-Guacamole-10-oz_44769deb-a1e6-4348-a3b4-9b2ca4f7f40f.d28ffce16951c7bfed1c990e151204c9.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt="corn"
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="fs-5 fw-semibold">$3.47</p>
+                <p class="cross-price">34.7&cent; /fl oz</p>
+              </div>
+              <p class="mt-md-3 same-text">bettergoods Finely</p>
+              <p class="same-text">Ground Casaava Flour...</p>
+              <button class="fw-semibold mt-md-2">&plus;Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-hello mt-sm-5 ps-sm-3">
+        <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-a2ae/k2-_f0a53ed9-6fae-4d2d-8126-24fbb224452b.v1.jpg?odnHeight=447&amp;odnWidth=794&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-a2ae/k2-_f0a53ed9-6fae-4d2d-8126-24fbb224452b.v1.jpg?odnHeight=894&amp;odnWidth=1588&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="auto" height="80%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-a2ae/k2-_f0a53ed9-6fae-4d2d-8126-24fbb224452b.v1.jpg?odnHeight=447&amp;odnWidth=794&amp;odnBg=&amp;odnDynImageQuality=70" alt="background-image"
+        >
+        <div class="hello-text">
+        <p class="fs-3">New & only at Walmart</p>
+        <p class="fw-medium">Say hello to</p>
+        <p class="fw-medium">bettergoods</p>
+         <button class="fw-semibold mt-md-2">Shop all</button>
+      </div>
+      </div>
+    </section>
+
+    <section> 
+      <div class="space-container d-flex">
+        <div class="left-space ms-md-4 pe-lg-4">
+          <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-eb34/k2-_96ba4160-13a8-4340-8796-61747bc86595.v1.jpg?odnHeight=658&amp;odnWidth=658&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-eb34/k2-_96ba4160-13a8-4340-8796-61747bc86595.v1.jpg?odnHeight=1316&amp;odnWidth=1316&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="100%" height="100%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-eb34/k2-_96ba4160-13a8-4340-8796-61747bc86595.v1.jpg?odnHeight=658&amp;odnWidth=658&amp;odnBg=&amp;odnDynImageQuality=70" alt="revamp" id="Collection-CollectionHero-contentZone38-PugABQ6Q">
+          <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+          <div class="leftspace-text">
+            <p class="summer-p">Summer-ize your space</p>
+            <p class="revamp-p">Revamp &</p>
+            <p class="revamp-p">renew</p>
+            <button class="fw-semibold mt-md-2">Shop home</button>
+          </div>
+        </div>
+      <div class="middle-space">
+        <div class="top-texas">
+          <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-e511/k2-_e6c05276-ec89-42fc-931b-6bc15cf046c6.v1.jpg?odnHeight=292&amp;odnWidth=512&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-e511/k2-_e6c05276-ec89-42fc-931b-6bc15cf046c6.v1.jpg?odnHeight=584&amp;odnWidth=1024&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="100%" height="90%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-e511/k2-_e6c05276-ec89-42fc-931b-6bc15cf046c6.v1.jpg?odnHeight=292&amp;odnWidth=512&amp;odnBg=&amp;odnDynImageQuality=70" alt="texas-house" id="Collection-Horizontal-contentZone38-u8e5cBlg">
+          <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+          <div class="midtop-text">
+           <p class="fs-5 my-texas">My Texas House</p>
+            <p class="fs-4 fw-bold farm-house">Erin's farmhouse accents</p>
+            <a href="#">Shop now</a>
+          </div>
+        </div>
+        <div class="bottom-craft-urban d-flex gap-md-4">
+          <div class="left-craft">
+            <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-d034/k2-_03c8cc13-487f-417f-8202-a2a285c2e97a.v1.jpg?odnHeight=342&amp;odnWidth=248&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-d034/k2-_03c8cc13-487f-417f-8202-a2a285c2e97a.v1.jpg?odnHeight=684&amp;odnWidth=496&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="100%" height="100%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-d034/k2-_03c8cc13-487f-417f-8202-a2a285c2e97a.v1.jpg?odnHeight=342&amp;odnWidth=248&amp;odnBg=&amp;odnDynImageQuality=70" alt="bag" id="Collection-VerticalSmall-contentZone38-BRQlpVqr">
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="craft-text">
+              <div class="craft-top-bottom">
+                <p class="fs-4 fw-semibold">Craft with Hello</p>
+                <p class="fs-4 fw-semibold">Hobby</p>
+              </div>
+               <p class="shop-now text-decoration-underline mt-sm-3">Shop now</p>
+            </div>
+          </div>
+          <div class="right-urban">
+            <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-97a1/k2-_508cf617-4587-437f-8d9a-f761241948c7.v1.jpg?odnHeight=342&amp;odnWidth=248&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-97a1/k2-_508cf617-4587-437f-8d9a-f761241948c7.v1.jpg?odnHeight=684&amp;odnWidth=496&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="100%" height="100%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-97a1/k2-_508cf617-4587-437f-8d9a-f761241948c7.v1.jpg?odnHeight=342&amp;odnWidth=248&amp;odnBg=&amp;odnDynImageQuality=70" alt="lamp" id="Collection-VerticalSmall-contentZone38-BO6QIH8x">
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="craft-text">
+              <div class="craft-top-bottom">
+                <p class="fs-4 fw-semibold">Urban Shop: decor</p>
+                <p class="fs-4 fw-semibold">& more</p>
+              </div>
+               <p class="shop-now text-decoration-underline mt-sm-3">Shop now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-space pe-lg-4 ms-md-4">
+        <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-4f0b/k2-_b287597a-53e1-4821-b875-2623175281ad.v1.jpg?odnHeight=658&amp;odnWidth=385&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-4f0b/k2-_b287597a-53e1-4821-b875-2623175281ad.v1.jpg?odnHeight=1316&amp;odnWidth=770&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="100%" height="100%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-4f0b/k2-_b287597a-53e1-4821-b875-2623175281ad.v1.jpg?odnHeight=658&amp;odnWidth=385&amp;odnBg=&amp;odnDynImageQuality=70" alt="cooking" id="Collection-VerticalLarge-contentZone38-9wRxZd1q">
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="rightspace-text">
+          <div class="ree">
+            <p class="fs-5 top">The Pioneer Woman</p>
+            <p class="fs-1 fw-semibold lower">Ree's latest picks</p>
+          </div>
+          <p class="shop-now text-decoration-underline mt-sm-4">Shop now</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="d-sm-flex justify-content-between align-items-center pb-sm-4">
+      <div class="fuss-fabulous ms-sm-4 pt-sm-3">
+        <p class="fs-3 fw-bold">No fuss, just fabulous</p>
+        <p class="style-home">Style your home in a flash</p>
+      </div>
+      <div class="right-view me-sm-4">
+        <a href="#">View all</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-sm-flex align-items-sm-start justify-content-between ps-md-5 pe-sm-5 mt-md-5">
+        <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Better-Homes-Garden-Green-Translucent-Ribbed-Glass-Tabletop-Vase_ae3bcb2a-ad00-4650-be3b-8e65eb9b0b34.40bf107ce104b45e79f874bef18b767d.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="vase"
+          height="230px"
+          width="100%"
+        />
+        <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class=" fs-5 fw-semibold">$14.97</p>
+          </div>
+          <p class="mt-md-3 same-text">Better Homes & Garden</p>
+          <p class="same-text">Green Translucent Ribbe...</p>
+          <button class="fw-semibold mt-md-2">&plus; Add</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Better-Homes-Gardens-Sharma-Jute-7-Indoor-Runner-Rug-by-Dave-Jenny-Marrs_79bae587-acba-4d09-b663-8916f25525b7.1a66622d28e4de934bfd0d80e10591bc.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFFF"
+          alt="rug"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="top-price fs-5 fw-semibold">Now $39.98</p>
+            <p class="cross-price text-decoration-line-through">$49.98</p>
+          </div>
+          <p class="more-options">Options from $39.98 - $210.00</p>
+          <p class="mt-md-3 same-text">Better Homes & Gardens</p>
+          <p class="same-text">Sharma Jute 7' Indoor...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Urban-Shop-8-Brown-Tortoise-Glass-Mushroom-Table-Lamp_e7091159-3cf9-43fd-87b8-9ef1ebe6977a.80708cd79cb8f954ac962c371eb7999a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="lamp"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="fs-5 fw-semibold">$9.98</p>
+          </div>
+          <p class="mt-md-3 same-text">Urban Shop 8" Brown</p>
+          <p class="same-text">Tortoise Glass Battery-...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Better-Homes-Gardens-Green-Cactus-20-x-20-Pillow-by-Dave-Jenny-Marrs_a2ccdae0-4a6a-4fe1-872e-232efe00f7b5.cebd72de47eb93e12c76a56b351eefe3.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="pillow"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="fs-5 fw-semibold">$22.98</p>
+          </div>
+          <p class="mt-md-3 same-text">Better Homes & Gardens</p>
+          <p class="same-text">Green Cactus 20" x 20"...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="earring short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Beautiful-Rattan-Glass-Coffee-Table-with-Solid-Wood-Frame-by-Drew-Barrymore-Warm-Honey-Finish_8cafadfc-faea-42f8-a390-bd4768be6a68.43e8a4506be22f392ec2d01953924c4e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="coffee-table"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="fs-5 fw-semibold">$248.00</p>
+          </div>
+          <p class="mt-md-3 same-text">Beautiful Rattan & Glass</p>
+          <p class="same-text">Coffee Table with Solid...</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+      </div>
+      <div class="mattress-2 short-link">
+        <img
+          src="https://i5.walmartimages.com/seo/Beautiful-Rattan-Glass-Side-Table-with-Solid-Wood-Frame-by-Drew-Barrymore-Warm-Honey-Finish_8c93a704-349b-4726-af41-ad1cfb668bd3.3634e8f2b93d43fbc93f101b8dbeabbf.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+          alt="side-table"
+          height="230px"
+          width="100%"
+        />
+         <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+        <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+        <div class="price-cont">
+          <div class="d-sm-flex align-items-center gap-2">
+            <p class="fs-5 fw-semibold">$148.00</p>
+          </div>
+          <p class="mt-md-3 same-text">Beautiful Rattan & Glass</p>
+          <p class="same-text">Coffee Table with Solid....</p>
+          <button class="fw-semibold mt-md-2">Options</button>
+        </div>
+        <div>
+          <p class="next-arrow2">></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-down d-sm-flex justify-content-center mt-sm-5">
+      <div class="left-everyday">
+        <div class="top-head d-sm-flex justify-content-between align-items-center mt-sm-4">
+          <div class="text-everyday ms-sm-5">
+            <p class="fs-2 fw-semibold">Phone cases to cables</p>
+            <p class="new-finds">Keep your tech safe(& stylish).</p>
+          </div>
+          <a href="#" class="pe-sm-3">View all</a>
+        </div>
+        <div class="three-items d-sm-flex align-items-sm-start justify-content-around">
+          <div class="short-link">
+            <img
+              src="https://i5.walmartimages.com/seo/Body-Glove-Tidal-Waterproof-Phone-Case-for-iPhone-11-Black-Clear_941dabb3-ccae-4a35-83fe-db1a1e9d04ec.5b8a90b74b21e8fcddeae24955521d5b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt="phone-case"
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="fs-5 fw-semibold">$19.88</p>
+              </div>
+              <p class="mt-md-3 same-text">Body Glove Tidal</p>
+              <p class="same-text">Waterproof Phone Case...</p>
+              <button class="fw-semibold mt-md-2">&plus;Add</button>
+            </div>
+          </div>
+          <div class="short-link">
+            <img
+              src="https://i5.walmartimages.com/seo/OtterBox-Defender-Series-Pro-Phone-Case-for-Apple-iPhone-SE-3rd-Gen-2022-and-2nd-Gen-2020-iPhone-8-iPhone-7-Blue_ef4d5398-c7f6-46d2-8bf5-49acdfab06ab.479a9109425c50d558e889aefbc512da.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt=""
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="top-price fs-5 fw-semibold">Now $39.97</p>
+                <p class="cross-price text-decoration-line-through">$49.95</p>
+              </div>
+              <p class="mt-md-3 same-text">OtterBox Defenderk</p>
+              <p class="same-text">Series Pro Phone Case...</p>
+              <button class="fw-semibold mt-md-2">Options</button>
+            </div>
+          </div>
+          <div class="short-link corn-cont">
+            <img
+              src="https://i5.walmartimages.com/seo/Belkin-20W-USB-C-Wall-Fast-Charger-for-iPhone-Samsung-Galaxy-iPad-AirPods-More-Silver_f524c696-fbb8-4533-828e-8eb5e19fe0a4.cbee6f89aaa6ea4a4896a80a8f961a18.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+              alt="charger"
+              height="230px"
+              width="100%"
+            />
+            <div class="fs-3"><i class="fa-regular fa-heart heart-icon"></i></div>
+            <div class="fs-3"><i class="fa-brands fa-instagram camera-icon"></i></i></div>
+            <div class="price-cont">
+              <div class="d-sm-flex align-items-center gap-2">
+                <p class="fs-5 fw-semibold">$13.88</p>
+              </div>
+              <p class="mt-md-3 same-text">Belkin 20W USB C Wall</p>
+              <p class="same-text">Fast Charger - for iPhon...</p>
+              <button class="fw-semibold mt-md-2">&plus;Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-hello mt-sm-5 ps-sm-3">
+        <img loading="lazy" srcset="https://i5.walmartimages.com/dfw/4ff9c6c9-5f65/k2-_01c404e3-a44d-4267-9771-e18b5e874c80.v1.jpg?odnHeight=447&amp;odnWidth=794&amp;odnBg=&amp;odnDynImageQuality=70 1x, https://i5.walmartimages.com/dfw/4ff9c6c9-5f65/k2-_01c404e3-a44d-4267-9771-e18b5e874c80.v1.jpg?odnHeight=894&amp;odnWidth=1588&amp;odnBg=&amp;odnDynImageQuality=70 2x" class="w-100 absolute absolute--fill" width="auto" height="80%" src="https://i5.walmartimages.com/dfw/4ff9c6c9-5f65/k2-_01c404e3-a44d-4267-9771-e18b5e874c80.v1.jpg?odnHeight=447&amp;odnWidth=794&amp;odnBg=&amp;odnDynImageQuality=70" alt="background">
+        <div class="hello-text">
+        <p class="fs-4">Tech Accessories</p>
+        <p class="fs-1 fw-normal">Standout Looks</p>
+         <button class="fw-semibold mt-md-2">Shop now</button>
+      </div>
+      </div>
+    </section>
+
+    <section class="section-feedback mt-5">
+      <div class="give-feedback d-sm-flex flex-column justify-content-center align-items-center">
+        <p class="fs-5 fw-normal">We'd love to hear what you think!</p>
+        <button class="fw-semibold mt-md-2">Give Feedback</button>
+      </div>
+    </section>
+    <footer>
+      <div class="top-ul">
+        <ul class="list-unstyled d-md-flex gap-md-4">
+          <li><a href="#">All Departments</a></li>
+          <li><a href="#">Store Directory</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Sell on Walmart.com</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Product Recalls</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Tax Exempt Program</a></li>
+          <li><a href="#">Get the Walmart App</a></li>
+        </ul>
+      </div>
+      <div class="mid-ul">
+        <ul class="list-unstyled d-md-flex gap-md-4">
+          <li><a href="#">Sign-up for Email</a></li>
+          <li><a href="#">Safety Data Sheet</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy & Security</a></li>
+          <li><a href="#">California Supply Chain Act</a></li>
+          <li><a href="#"><img loading="lazy" width="29" height="14" src="//i5.walmartimages.com/dfwrs/76316474-f70e/k2-_67001355-c576-4ca2-989d-260a2673c41a.v1.png" alt="Privacy choices icon" class="mr1">Your Privacy Choices</a></li>
+          <li><a href="#">Notice at Collection</a></li>
+        </ul>
+      </div>
+      <div class="low-ul">
+        <ul class="list-unstyled d-md-flex gap-md-4">
+          <li><a href="#">NV Consumer Health Data Privacy Notice</a></li>
+          <li><a href="#">WA Consumer Health  Data Privacy Notice</a></li>
+          <li><a href="#">Request My Personal Information</a></li>
+          <li><a href="#">Brand Shop Directory</a></li>
+          <li><a href="#">Pharmacy</a></li>
+          <li><a href="#">Walmart Business</a></li>
+          <li><a href="#">#IYWYK</a></li>
+        </ul>
+      </div>
+      <div class="last-ul">
+        <ul  class="list-unstyled text-center mt-md-3 mb-0">
+          <li><a href="#">Delete Account</a></li>
+        </ul>
+      </div>
+      <div class="end text-center mt-md-3 mb-0">
+        <p  class="mb-0">© 2024 Walmart. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
